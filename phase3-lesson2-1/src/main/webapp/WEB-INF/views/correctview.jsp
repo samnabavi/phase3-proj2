@@ -9,10 +9,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1 style="color:blue">  List of Employees </h1>
+<h1 style="color:blue">  This is the feedback that you are looking for </h1>
 
-${correctemp.id}
-${correctemp.name}
+<h5>Feedback id:</h5>
+${correctfb.id}
+</br>
+<h5>Feedback name:</h5>
+${correctfb.name}
+</br>
+<h5>Feedback comment:</h5>
+${correctfb.comment}
+</br>
+<a href="/addfb">Home Page</a>
 
 </body>
 </html>

@@ -10,6 +10,6 @@
 
 <h2>wrong id haha</h2>
 
-<a href="/addemp">Home Page</a>
+<a href="/addfb">Home Page</a>
 </body>
 </html>

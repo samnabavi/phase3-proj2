@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<h1> Add new Employee</h1>
+<h1> Check for feedback</h1>
 
 	<form:form modelAttribute="form">
 		<form:errors path="" element="div"/>

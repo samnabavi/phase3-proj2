@@ -6,18 +6,18 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hcl.dao.EmpRepository;
-import com.hcl.model.Employee;
+import com.hcl.dao.FbRepository;
+import com.hcl.model.Feedback;
 
 @Service
-public class EmployeeService {
+public class FeedbackService {
 
 	@Autowired
-	private EmpRepository repo;
+	private FbRepository repo;
 	
-	public boolean saveEmployee(Employee emp) {
+	public boolean saveFeedback(Feedback fb) {
 		try {
-			repo.save(emp);
+			repo.save(fb);
 			return true;
 		} catch(Exception e) {
 			System.out.println("can't save");
@@ -25,21 +25,22 @@ public class EmployeeService {
 		}
 	}
 	
-	public List<Employee> findAllEmployees() {
-		return (List<Employee>) repo.findAll();
+	public List<Feedback> findAllFeedbacks() {
+		return (List<Feedback>) repo.findAll();
 	}
 	
-	public Optional<Employee> findEmployeeById(long id) {
+	public Optional<Feedback> findFeedbackById(long id) {
 		return repo.findById(id);
 	}
 	
-	public boolean deleteEmployee(Employee emp) {
+	public boolean deleteFeedback(Feedback fb) {
 		try {
-			repo.delete(emp);
+			repo.delete(fb);
 			return true;
 		} catch( Exception e) {
 			System.out.println("Couldn't delete");
 			return false;
 		}
 	}
+	
 }

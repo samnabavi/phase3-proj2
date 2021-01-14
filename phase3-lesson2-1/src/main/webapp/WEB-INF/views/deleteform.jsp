@@ -11,21 +11,27 @@
 </head>
 <body>
     <div align="center">
-        <h2>Delete Customer</h2>
-        <form:form action="delete" method="post" modelAttribute="deleteemp">
+        <h2>Delete Feedback</h2>
+        <form:form action="delete" method="post" modelAttribute="deletefb">
             <table border="0" cellpadding="5">
                 <tr>
                     <td>ID: </td>
-                    <td>${deleteemp.id}
+                    <td>${deletefb.id}
                         <form:hidden path="id"/>
                     </td>
                 </tr>    
                 <tr>
-                    <td>ID: </td>
-                    <td>${deleteemp.name}
+                    <td>Name: </td>
+                    <td>${deletefb.name}
                         <form:hidden path="name"/>
                     </td>
                 </tr>     
+                <tr>
+                    <td>COMMENT: </td>
+                    <td>${deletefb.comment}
+                        <form:hidden path="comment"/>
+                    </td>
+                </tr>
                 
                 <tr>
                     <td colspan="2"><input type="submit" value="Delete"></td>
@@ -33,5 +39,8 @@
             </table>
         </form:form>
     </div>
+    
+<a href="/addfb">Home Page</a>    
+    
 </body>
 </html>
